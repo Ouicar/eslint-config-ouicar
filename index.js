@@ -8,7 +8,6 @@ module.exports = {
 		'./rules/react',
 		'./rules/a11y',
 		'./rules/immutable',
-		'./rules/sorting',
 		'./rules/import',
 		'./rules/classes',
 		'./rules/prettier',
