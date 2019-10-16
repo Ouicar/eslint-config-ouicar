@@ -1,27 +1,65 @@
-# eslint-config-ouicar
 
-This package provides OuiCar default eslint config.
+#config-ouicar
 
-## Installation
 
-`npm install --save-dev git://github.com/Ouicar/eslint-config-ouicar.git`
+[https://www.npmjs.com/settings/ouicar/packages]
 
-## Usage
+---
 
-In .eslintrc:
+This package provides OuiCar project with the following:
 
-You can use all rules by extending OuiCar config:
-```
-"extends": [
-    "ouicar"
-],
-```
+- prettier
+- eslint
+  
+## Installation and usage
 
-Or use specific rules only:
-```
-"extends": [
-    "ouicar/rules/sorting"
-],
+  
+### Prettier
+
+```console
+> npm install -D @ouicar/prettier`
 ```
 
+Edit `.prettierrc.js`
 
+```js
+module.exports  = {
+	...require("@ouicar/prettier")
+}
+```
+
+### Eslint
+
+```console
+> npm install -D @ouicar/eslint`
+```
+
+Edit `.eslintrc.js`
+
+```js
+module.exports = {
+	...require("@ouicar/eslint")
+}
+```
+
+## Publishing
+
+At the root of the **config-ouicar** project, edit `.npmrc`
+
+```
+registry=https://registry.npmjs.org/
+email=saas@ouicar.fr
+```
+
+then
+```console
+> npm adduser
+```
+
+**user**: ouicar
+**password**: ask :)
+
+```console
+> cd prettier
+> npm publish --access public
+```

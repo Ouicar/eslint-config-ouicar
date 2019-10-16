@@ -1,0 +1,18 @@
+{
+  "name": "@ouicar/prettier-config",
+  "version": "1.0.0",
+  "description": "prettier config for ouicar projects",
+  "main": ".prettierrc.js",
+  "author": "ouicar",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ouicar/eslint-config-ouicar/prettier"
+  },
+  "peerDependencies": {
+    "prettier": "^1.14.0"
+  }
+}
