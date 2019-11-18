@@ -1,6 +1,6 @@
 {
   "name": "@ouicar/prettier-config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "prettier config for ouicar projects",
   "main": ".prettierrc.js",
   "author": "ouicar",
@@ -13,6 +13,6 @@
     "url": "https://github.com/Ouicar/eslint-config-ouicar/prettier"
   },
   "peerDependencies": {
-    "prettier": "^1.14.0"
+    "prettier": "^1.19.1"
   }
 }
