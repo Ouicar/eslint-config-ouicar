@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'plugin:flowtype/recommended', 'prettier'],
+  extends: ['airbnb', 'airbnb/hooks', 'plugin:flowtype/recommended', 'plugin:prettier/recommended'],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 6,
@@ -8,7 +8,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['immutable', 'sorting', 'jsx-a11y', 'react', 'react-hooks', 'flowtype', 'prettier'],
+  plugins: ['immutable', 'sorting', 'jsx-a11y', 'import', 'react', 'react-hooks', 'flowtype', 'prettier'],
   rules: {
     'prettier/prettier': ['error'],
     'no-bitwise': 'off',
