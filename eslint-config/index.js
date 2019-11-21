@@ -1,5 +1,12 @@
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'plugin:flowtype/recommended', 'plugin:prettier/recommended'],
+  extends: [
+  'airbnb',
+  'airbnb/hooks',
+  'plugin:flowtype/recommended',
+  'plugin:prettier/recommended',
+  'prettier/flowtype',
+  'prettier/react',
+],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 6,
