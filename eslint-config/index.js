@@ -54,6 +54,13 @@ module.exports = {
     'react/jsx-filename-extension': 'off',
     'react/jsx-no-target-blank': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'react/jsx-sort-props': [
+      'warn',
+      {
+        callbacksLast: true,
+        reservedFirst: true
+      }
+    ],
     'react/no-access-state-in-setstate': 'off',
     'react/no-array-index-key': 'off',
     'react/no-danger': 'off',
