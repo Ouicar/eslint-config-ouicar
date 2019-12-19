@@ -23,7 +23,8 @@ module.exports = {
     'prettier',
     'react-hooks',
     'react',
-    'sorting'
+    'sorting',
+    'sort-keys-fix'
   ],
   rules: {
     'immutable/no-let': 'off',
@@ -68,6 +69,7 @@ module.exports = {
     'react/state-in-constructor': 'off',
     'react/static-property-placement': 'off',
     'sorting/sort-object-props': 'off',
+    'sort-keys-fix/sort-keys-fix': ['warn', 'asc', {natural: true}],
     'array-callback-return': 'off',
     'camelcase': 'off',
     'class-methods-use-this': 'off',

@@ -1,6 +1,6 @@
 {
   "name": "@ouicar/eslint-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "eslint config for Ouicar",
   "main": "index.js",
   "author": "Ouicar",
@@ -26,7 +26,6 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "eslint-plugin-sorting": "^0.4.1",
-    "flow-typed": "^2.5.1",
-    "prettier": "^1.14.0"
+    "eslint-plugin-sort-keys-fix": "^1.1.0"
   }
 }
