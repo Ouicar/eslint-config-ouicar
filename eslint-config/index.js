@@ -57,7 +57,6 @@ module.exports = {
     'react/jsx-sort-props': [
       'warn',
       {
-        callbacksLast: true,
         reservedFirst: true
       }
     ],
