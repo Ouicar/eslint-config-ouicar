@@ -34,6 +34,24 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'import/no-named-as-default': 'off',
     'import/no-named-default': 'off',
+    'import/order': [
+      'warn',
+      {
+        'groups': [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index'
+        ],
+        'newlines-between': 'always-and-inside-groups',
+        'alphabetize': {
+          order: 'asc'
+        }
+      }
+    ],
+    'import/first': 'off',
     'import/prefer-default-export': 'off',
     'jsx-a11y/alt-text': 'off',
     'jsx-a11y/anchor-has-content': 'off',
