@@ -1,22 +1,22 @@
 module.exports = {
   extends: [
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
     'airbnb',
     'airbnb/hooks',
-    'plugin:flowtype/recommended',
     'plugin:prettier/recommended',
-    'prettier/flowtype',
-    'prettier/react'
+    'prettier/react',
   ],
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 6,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: [
-    'flowtype',
+    '@typescript-eslint',
     'immutable',
     'import',
     'jsx-a11y',
@@ -24,9 +24,15 @@ module.exports = {
     'react-hooks',
     'react',
     'sorting',
-    'sort-keys-fix'
+    'sort-keys-fix',
   ],
   rules: {
+    '@typescript-eslint/camelcase': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unused-vars': ['warn', { ignoreRestSiblings: true }],
+    '@typescript-eslint/no-var-requires': 'off',
     'immutable/no-let': 'off',
     'immutable/no-mutation': 'off',
     'import/extensions': 'off',
@@ -43,13 +49,13 @@ module.exports = {
           'internal',
           'parent',
           'sibling',
-          'index'
+          'index',
         ],
         'newlines-between': 'always-and-inside-groups',
         'alphabetize': {
-          order: 'asc'
-        }
-      }
+          order: 'asc',
+        },
+      },
     ],
     'import/first': 'off',
     'import/prefer-default-export': 'off',
@@ -75,8 +81,8 @@ module.exports = {
     'react/jsx-sort-props': [
       'warn',
       {
-        reservedFirst: true
-      }
+        reservedFirst: true,
+      },
     ],
     'react/no-access-state-in-setstate': 'off',
     'react/no-array-index-key': 'off',
@@ -93,7 +99,7 @@ module.exports = {
     'react/state-in-constructor': 'off',
     'react/static-property-placement': 'off',
     'sorting/sort-object-props': 'off',
-    'sort-keys-fix/sort-keys-fix': ['warn', 'asc', {natural: true}],
+    'sort-keys-fix/sort-keys-fix': ['warn', 'asc', { natural: true }],
     'array-callback-return': 'off',
     'camelcase': 'off',
     'class-methods-use-this': 'off',
@@ -120,6 +126,7 @@ module.exports = {
     'no-unneeded-ternary': 'off',
     'no-unsafe-finally': 'off',
     'no-unused-expressions': 'off',
+    'no-unused-vars': 'off',
     'no-useless-computed-key': 'off',
     'no-useless-escape': 'off',
     'no-useless-return': 'off',
@@ -129,13 +136,13 @@ module.exports = {
     'prefer-template': 'off',
     'radix': 'off',
     'spaced-comment': 'off',
-    'valid-typeof': 'off'
+    'valid-typeof': 'off',
   },
   env: {
     browser: true,
     es6: true,
     jquery: true,
-    node: true
+    node: true,
   },
   globals: {
     _context: true,
@@ -198,6 +205,6 @@ module.exports = {
     SyntheticWheelEvent: false,
     test: false,
     TimeoutID: false,
-    WOW: false
-  }
+    WOW: false,
+  },
 };
