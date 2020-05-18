@@ -1,12 +1,12 @@
 {
   "name": "@ouicar/eslint-config",
-  "version": "1.2.3",
+  "version": "2.0.0",
   "description": "eslint config for Ouicar",
   "main": "index.js",
   "author": "Ouicar",
   "license": "ISC",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://nexus.ouicar.io/repository/npm-private/"
   },
   "repository": {
     "type": "git",
