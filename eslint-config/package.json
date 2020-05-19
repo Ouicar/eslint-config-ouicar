@@ -1,6 +1,6 @@
 {
   "name": "@ouicar/eslint-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "eslint config for Ouicar",
   "main": "index.js",
   "author": "Ouicar",
