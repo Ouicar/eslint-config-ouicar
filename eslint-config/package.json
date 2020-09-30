@@ -1,6 +1,6 @@
 {
   "name": "@ouicar/eslint-config",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "eslint config for Ouicar",
   "main": "index.js",
   "author": "Ouicar",
@@ -13,8 +13,8 @@
     "url": "https://github.com/Ouicar/eslint-config-ouicar/eslint"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.0.0",
-    "@typescript-eslint/parser": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
     "eslint": "^7.10.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.7.0",
